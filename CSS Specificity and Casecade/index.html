@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Casecade</title>
+
+    <style>
+        /* The Specificity of this selector is 0 */
+        *{
+            background-color: rgb(255, 243, 228);
+        }
+        /* The Specificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The Specificity of this selector is 1+10 */
+        /* specificity is more so red will be apply */
+        h1.cred{
+            color:red;
+        }
+        /* The Specificity of this selector is 10 */
+        .cyellow{
+            color:yellow;
+        }
+        /* The Specificity of this selector is 10 */
+        .cpurple{
+            color:purple;
+        }
+        /* The Specificity of this selector is 1 */
+        div{
+            background-color: brown;
+            color: aliceblue;
+            font-size: 27px;
+        }
+        /* The Specificity of this selector is 1 */
+        p{
+            color:cadetblue !important;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        The priority of styling is as : <br>
+        Inline style > Id Selector > Class or attribute selector > Element Selector > Universal Selector
+    </div>
+    <h1 class="cred cyellow cpurple">
+        This is HTML file.
+    </h1>
+    <h1 style="color:blue">
+        This is another H1 tag.
+    </h1>
+    <p style="color:chocolate">This is Paragraph</p>
+</body>
+</html>
