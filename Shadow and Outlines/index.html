@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Outlines</title>
+<style>
+    .c1{
+        border: 3px solid black;
+        padding:10px;
+        box-shadow: 1px 5px 10px 3px red ;
+        text-shadow: 2px 2px 1px rgb(0, 255, 183);
+    }
+    .c2{
+        border: 2px solid rgb(25, 0, 255);
+        margin:30px auto;
+        outline:2px solid rgb(0, 0, 0);
+        outline-offset: 5px;;
+        padding:5px;
+        border-radius: 20px;
+
+    }
+</style>
+</head>
+<body>
+    <!-- box shadow:horizontal_offset Vertical_offset blur spread color inset; -->
+    <!-- horizontal_offset & Vertical_offset determines shadow's horixontal and verrtical position. -->
+    <!-- blur : the larger the value the burrier the shadow. -->
+    <!-- spread : expands or shrinks the shadow size. -->
+    <!-- color : Defines the shadow color. -->
+    <!-- inset : Makes the shadow inner.  -->
+
+
+    <!-- Text Shadow: horizontal_offset Vertical_offset blur color-->
+    <div class="c1"> This is a div.</div>
+    <div class="c2">This is another div</div>
+</body>
+</html>
