@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{ 
+             background-color:red; 
+        } */
+          
+        /* Class Selector */
+        .red{
+            background-color: rgb(255, 0, 0);
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p{
+            color: aqua;
+            background-color: blanchedalmond;
+        }
+
+        /* Descendant Selector */
+        div p{
+            
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 2;
+            padding:0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: rgb(255, 251, 0);
+        }
+        a:link{
+            color:chocolate;
+        }
+        a:active{
+            background-color: aquamarine;
+        }
+        a:hover{
+            background-color: cornflowerblue;
+        }
+        p:first-child{
+            color: rgb(173, 173, 230);
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        <article>
+            <p>
+                This is for descendant use
+            </p>
+        </article>
+        I am Developer
+    </div>
+    <div id="green">
+        I am Engineer
+        <p>
+            Hello This is Paragraph
+        </p>
+    </div>
+    <a href="https://www.google.com">Open Google</a>
+    <a href="https://www.facebook.com">Open Facebook</a>
+</body>
+</html>
