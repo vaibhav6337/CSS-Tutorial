@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multitheme Website</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: var(--tcolor);
+        }
+        
+
+        :root {
+            --color: rgb(255, 255, 255);
+            --fcolor: rgb(75, 75, 255);
+            --scolor: rgb(121, 121, 255);
+            --tcolor: rgb(190, 190, 255);
+        }
+        
+        /* :root {
+            --color: rgb(255, 255, 255);
+            --fcolor: rgb(228, 75, 255);
+            --scolor: rgb(226, 121, 255);
+            --tcolor: rgb(255, 190, 254);
+        } */
+
+        div ul li {
+
+            color: var(--color);
+            margin: 10px;
+            padding: 10px 10px;
+
+            text-align: center;
+            /* border:2px solid var(--scolor);
+            border-radius: 10px; */
+            background-color: var(--fcolor);
+
+
+        }
+
+        div ul :last-child a{
+
+            margin-left: 900px;
+
+        }
+
+        ul {
+            background-color: var(--fcolor);
+            list-style-type: none;
+            display: flex;
+            /* padding:10px; */
+        }
+        a{
+            background-color: var(--fcolor);
+            color:white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+
+               <li> <a href="https://www.google.com">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
