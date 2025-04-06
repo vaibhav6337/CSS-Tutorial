@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+:root{
+    /* Global Variable */
+    --color:rgb(175, 169, 255);
+    --seccolor:rgb(175, 144, 255);
+    --redcol:rgb(255, 0, 0);
+
+    --defpad:30px;
+    
+}
+        .class1 {
+            background-color: var(--seccolor);
+            
+        }
+ul li:first-child{
+    /* Local Variable */
+    --color:rgba(30, 3, 99, 0.82);
+    background-color:var(--color);
+}
+ul li:nth-child(3){
+    /* if variable not found it will take second parameter as color */
+    background-color:var(--newcol,rgba(242, 0, 255, 0.685));
+}
+        ul li {
+            background-color: var(--color);
+            list-style-type: none;
+            padding: var(--defpad);
+            padding-bottom: 13px;
+            padding-top:13px;
+            padding-left: 10px;
+            border: 2px solid var(--redcol);
+        }
+
+        ul {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laborum dolorem a facilis
+        cumque ut ipsum iure tempore minima fugit, blanditiis quibusdam obcaecati earum deleniti sit! Numquam sequi
+        culpa nobis minima, sit, temporibus, corporis architecto quis a nostrum dignissimos! Facilis sunt odit
+        recusandae animi nulla!</div>
+</body>
+
+</html>
