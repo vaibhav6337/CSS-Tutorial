@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properties</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 70vh;
+            border: 3px solid rgb(0, 0, 0);
+
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            /* margin: 10px; */
+            border: 3px solid blue;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transform: rotate(0.15turn); */
+            /* transform: rotateX(30deg); */
+            /* /* transform: rotateY(30deg);  */
+            /* transform: rotateZ(30deg); */
+            /* transform: scale(1.5); */
+            /* transform: scaleX(2); */
+           /* transform: skew(20deg); */
+           /* transform: skewY(20deg); */
+           /* transform: translateY(60px); */
+           /* transform: translateX(60px) translateY(40px) skewY(20deg); */
+           transform: rotate(70deg);
+           
+           transform-origin: 0% 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
