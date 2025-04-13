@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Object Cover</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            border: 2px solid black;
+            width: 455px;
+            height: 455px;
+            background-position: center center;
+            /* background-image: url("1.png"); */
+            /* background-repeat: no-repeat; */
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            /* background-clip: content-box; */
+        }
+            img {
+
+                width: 455px;
+                height: 455px;
+                /* object-fit: cover; */
+                object-fit: contain;
+                /* object-fit: fill; */
+                /* object-position: top right; */
+                object-position: 10px 20px;
+
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="1.png" alt="no image">
+    </div>
+</body>
+
+</html>
