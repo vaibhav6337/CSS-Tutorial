@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter</title>
+    <style>
+/* img{
+    filter: blur(4px);
+} */
+.img1{
+    width: 400px;
+filter: brightness(250%) contrast(1.2);
+}
+.img2{
+    width: 400px;
+    filter:grayscale(50%);
+    filter:sepia(70%);
+    
+}
+.img3{
+    height: 400px;
+    width: 400px;
+    /* filter:drop-shadow(10px 10px 20px red); */
+    filter: invert(0.70);
+    filter:opacity(0.3);
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="nature.jpg" alt="no Image"  >   
+        <img class="img2" src="vk.jpg" alt="no image">
+        <img class="img3" src="srk.jpg" alt="no image">
+    </div>
+</body>
+</html>
